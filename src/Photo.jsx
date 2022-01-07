@@ -10,7 +10,9 @@ export default function Photo() {
   return (
     <article className="Photo">
       <h2>Hello from Photo</h2>
-      <button onClick={LikePhoto}>{like}</button>
+      <button onClick={LikePhoto} type="button">
+        {like}
+      </button>
     </article>
   );
 }
