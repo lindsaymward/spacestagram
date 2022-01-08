@@ -1,5 +1,6 @@
+import React from "react";
 import "./App.css";
-import Photo from "./Photo";
+import Photo from "./Photo.jsx";
 
 function App() {
   return (

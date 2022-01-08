@@ -1,20 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import axios from "axios";
+import Like from "./Like.jsx";
+import "./Photo.css";
 
 export default function Photo() {
-  const [like, setLike] = useState("Like");
+  let [load, setLoad] = useState(false);
+  let [imageUrl, setImageUrl] = useState(null);
 
-  function LikePhoto() {
-    like === "Like" ? setLike("Unlike") : setLike("Like");
+  function showPhoto(response) {
+    console.log(response);
+    setImageUrl(response.data.hdurl);
+    setLoad(true);
   }
 
-  return (
-    <article className="Photo">
-      <h2>Hello from Photo</h2>
-      <button onClick={LikePhoto} type="button">
-        {like}
-      </button>
-    </article>
-  );
-}
+  useEffect(() => {
+    const apiKey = "ptWGI0lwo6zmVqleMkST6V9CfElUnCJggQwDRgWs";
+    let apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}`;
+    axios.get(apiUrl).then(showPhoto);
+  }, []);
 
-// API Key is ptWGI0lwo6zmVqleMkST6V9CfElUnCJggQwDRgWs
+  if (load) {
+    return (
+      <article className="Photo">
+        <img src={imageUrl} alt="NASA" />
+        <Like />
+      </article>
+    );
+  } else {
+    return "Loading...";
+  }
+}
