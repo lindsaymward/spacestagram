@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
+import { Rings } from "react-loading-icons";
 import axios from "axios";
 import Photo from "./Photo.jsx";
 
@@ -33,7 +34,7 @@ function App() {
   }, []);
 
   if (photo === null) {
-    return "Loading...";
+    return <Rings />;
   } else {
     return (
       <div className="App">
