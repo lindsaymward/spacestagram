@@ -10,15 +10,17 @@ export default function Footer() {
           href="https://github.com/lindsaymward/spacestagram"
           target="_blank"
           rel="noreferrer"
+          title="GitHub Repository for this app"
         >
-          <i className="bi-github" role="img" aria-label="GitHub"></i>
+          <i className="bi-github" aria-label="GitHub Repository"></i>
         </a>
         <a
           href="https://www.linkedin.com/in/lindsaymward21/"
           target="_blank"
           rel="noreferrer"
+          title="Lindsay's LinkedIn Profile"
         >
-          <i className="bi bi-linkedin"></i>
+          <i className="bi bi-linkedin" aria-label="LinkedIn Profile"></i>
         </a>
       </div>
     </footer>
