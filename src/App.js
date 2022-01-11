@@ -38,9 +38,12 @@ function App() {
     return <Rings />;
   } else {
     return (
-      <div className="App">
+      <div className="App container">
         <header className="App-header">
           <h1>Spacestagram</h1>
+          <p>
+            Inspiring photos provided by NASA's Astronomy Picture of the Day
+          </p>
         </header>
         <main>{photo}</main>
         <Footer />

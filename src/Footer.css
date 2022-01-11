@@ -1,0 +1,18 @@
+footer {
+  color: #003366;
+  margin-bottom: 30px;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-evenly;
+  font-size: 48px;
+}
+
+a {
+  color: #454c92;
+  transition: all 125ms ease-in-out;
+}
+a:hover {
+  color: #827eae;
+}
