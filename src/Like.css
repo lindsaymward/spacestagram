@@ -2,3 +2,7 @@ button {
   display: block;
   margin: 0 auto;
 }
+
+.bi-heart-fill {
+  color: #454c92;
+}
