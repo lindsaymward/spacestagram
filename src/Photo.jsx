@@ -4,16 +4,14 @@ import "./Photo.css";
 
 export default function Photo(props) {
   return (
-    <article className="Photo">
-      <img src={props.url} alt={props.title} />
-      <br />
-      <small>{props.date}</small>
-      <Like />
-      <h2>{props.title}</h2>
-      <p>{props.desc}</p>
-
-      <br />
-      <hr />
+    <article className="Photo card">
+      <img src={props.url} alt={props.title} className="card-img-top" />
+      <div className="card-body">
+        <small>{props.date}</small>
+        <Like />
+        <h2 className="card-title">{props.title}</h2>
+        <p className="card-text">{props.desc}</p>
+      </div>
     </article>
   );
 }
