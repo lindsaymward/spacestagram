@@ -2,15 +2,17 @@ import React, { useState } from "react";
 import "./Like.css";
 
 export default function Like() {
-  const [like, setLike] = useState("Like");
+  const [like, setLike] = useState("bi bi-heart");
 
   function LikePhoto() {
-    like === "Like" ? setLike("Unlike") : setLike("Like");
+    like === "bi bi-heart"
+      ? setLike("bi bi-heart-fill")
+      : setLike("bi bi-heart");
   }
 
   return (
     <button onClick={LikePhoto} type="button">
-      {like}
+      <i className={like} alt="Like button"></i>
     </button>
   );
 }

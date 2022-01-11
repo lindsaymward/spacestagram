@@ -32,17 +32,22 @@ function App() {
     }
   }, []);
 
-  return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Spacestagram</h1>
-      </header>
-      <main>{photo}</main>
-      <footer>
-        <p>Coded by Lindsay Ward</p>
-      </footer>
-    </div>
-  );
+  if (photo === null) {
+    return "Loading...";
+  } else {
+    return (
+      <div className="App">
+        <header className="App-header">
+          <h1>Spacestagram</h1>
+        </header>
+        <main>{photo}</main>
+        <footer>
+          <p>Coded by Lindsay Ward</p>
+          <i class="bi-github" role="img" aria-label="GitHub"></i>
+        </footer>
+      </div>
+    );
+  }
 }
 
 export default App;
