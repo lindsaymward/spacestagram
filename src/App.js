@@ -14,7 +14,7 @@ function App() {
         return (
           <div key={index}>
             <Photo
-              url={url.hdurl}
+              url={url.url}
               title={url.title}
               date={url.date}
               desc={url.explanation}
