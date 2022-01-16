@@ -11,7 +11,7 @@ export default function Like() {
   }
 
   return (
-    <button onClick={LikePhoto} type="button" class="btn">
+    <button onClick={LikePhoto} type="button" className="btn">
       <i className={like} alt="Like button"></i>
     </button>
   );

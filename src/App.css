@@ -16,3 +16,9 @@ header {
 header h1 {
   font-size: 48px;
 }
+
+@media (min-width: 768px) {
+  .App {
+    max-width: 738px;
+  }
+}
