@@ -1,7 +1,7 @@
 # Spacestragram by Lindsay Ward 👋🏳️‍🌈🇨🇦
 ## For consideration of the 2022 Front-End Developer Summer Internships at Shopify 🚀
 
-An Instagram app clone that features photos from NASA's image APIs. Users can "like" and "unlike" images and see data for each image.
+An Instagram app clone that features photos from NASA's Astronomy Picture of the Day (APOD) API. Users can "like" and "unlike" images and see data for each image.
 Since Instagram uses ReactJS, I thought it would be easiest to setup this app with it as well.
 
 This app was initially setup in VS Code using create-react-app. From there, I setup several components to keep the code from getting too hard to read within one component:
