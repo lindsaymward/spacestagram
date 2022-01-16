@@ -12,7 +12,7 @@ export default function Footer() {
           rel="noreferrer"
           title="GitHub Repository for this app"
         >
-          <i className="bi-github" aria-label="GitHub Repository"></i>
+          <i className="bi-github"></i>
         </a>
         <a
           href="https://www.linkedin.com/in/lindsaymward21/"
@@ -20,7 +20,7 @@ export default function Footer() {
           rel="noreferrer"
           title="Lindsay's LinkedIn Profile"
         >
-          <i className="bi bi-linkedin" aria-label="LinkedIn Profile"></i>
+          <i className="bi bi-linkedin"></i>
         </a>
       </div>
     </footer>
