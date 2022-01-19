@@ -17,6 +17,20 @@ header h1 {
   font-size: 48px;
 }
 
+.btn-primary {
+  background-color: #454c92;
+  border: 1px solid #003366;
+  transition: all 125ms ease-in-out;
+}
+
+.btn-primary:hover {
+  background-color: #827eae;
+}
+
+.btn-primary:focus {
+  background-color: #454c92;
+}
+
 @media (min-width: 768px) {
   .App {
     max-width: 738px;

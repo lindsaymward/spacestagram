@@ -5,8 +5,9 @@ import axios from "axios";
 import Photo from "./Photo.jsx";
 import Footer from "./Footer.jsx";
 
-function App() {
+export default function App() {
   let [photo, setPhoto] = useState(null);
+  let [click, setClick] = useState(null);
 
   function displayPhoto(data) {
     setPhoto(
@@ -25,6 +26,16 @@ function App() {
     );
   }
 
+  function scrollToTop() {
+    window.scrollTo(0, 0);
+  }
+
+  function handleClick(event) {
+    event.preventDefault();
+    setClick(!click);
+    scrollToTop();
+  }
+
   useEffect(() => {
     const apiKey = "ptWGI0lwo6zmVqleMkST6V9CfElUnCJggQwDRgWs";
     let apiUrl = `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&count=4`;
@@ -32,10 +43,18 @@ function App() {
     function showPhoto(response) {
       displayPhoto(response.data);
     }
-  }, []);
+  }, [click]);
 
   if (photo === null) {
-    return <Rings />;
+    return (
+      <Rings
+        stroke="#003366"
+        speed="1.5"
+        width="200px"
+        height="200px"
+        strokeWidth="1"
+      />
+    );
   } else {
     return (
       <div className="App container">
@@ -45,11 +64,14 @@ function App() {
             Inspiring photos provided by NASA's Astronomy Picture of the Day
           </p>
         </header>
-        <main>{photo}</main>
+        <main>
+          {photo}
+          <button className="btn btn-primary" onClick={handleClick}>
+            New photos please!
+          </button>
+        </main>
         <Footer />
       </div>
     );
   }
 }
-
-export default App;
