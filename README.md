@@ -13,10 +13,10 @@ This app was initially setup in VS Code using create-react-app. From there, I se
 I also used Bootstrap to make the page responsive (and quickly too!). I also used the Bootstrap icons for GitHub and LinkedIn within the footer.
 
 Loading icon was found on npmjs here:
-https://www.npmjs.com/package/react-loading-icons
+[React Loading Icons](https://www.npmjs.com/package/react-loading-icons)
 
 I hosted the page on Netlify and you can see it here:
-https://eloquent-montalcini-e2a2a0.netlify.app/
+[Spacestagram by Lindsay Ward](https://eloquent-montalcini-e2a2a0.netlify.app/)
 
 I found I was having issues with some data from the NASA API since some results are not images, but videos. Putting videos in my image elements obviously wouldn't work. I tried using the HTML5 video element and some conditional statements to show the embedded YouTube or Vimeo video, but ended up with white space. I've commented out that code for now due to time constraints. I suspected it would have to do with Netlify hosting or a browser security feature for embedded photos. Otherwise, I'd take a look at using a different element to see if that would work. If you have ideas or a solution, let me know!
 
