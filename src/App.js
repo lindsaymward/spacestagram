@@ -19,6 +19,7 @@ export default function App() {
               title={url.title}
               date={url.date}
               desc={url.explanation}
+              type={url.media_type}
             />
           </div>
         );
