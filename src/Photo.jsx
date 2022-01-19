@@ -20,7 +20,11 @@ export default function Photo(props) {
   else
     return (
       <article className="Photo card">
-        <video src={props.url} alt={props.title} className="card-img-top" />
+        <video
+          src={`https:${props.url}`}
+          alt={props.title}
+          className="card-img-top"
+        />
         <div className="card-header">
           <Like />
         </div>
