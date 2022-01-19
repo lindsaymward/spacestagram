@@ -1,7 +1,7 @@
 # Spacestragram by Lindsay Ward 👋🏳️‍🌈🇨🇦
 ## For consideration of the 2022 Front-End Developer Summer Internships at Shopify 🚀
 
-An Instagram app clone that features photos from NASA's Astronomy Picture of the Day (APOD) API. Since Instagram uses ReactJS, I thought it would be easiest to setup this app with it as well.
+This page is an Instagram app clone that features photos from NASA's Astronomy Picture of the Day (APOD) API. Since Instagram uses ReactJS, I thought it would be easiest to setup this app with it as well.
 Users can "like" and "unlike" images and see data for each image. There's also a button after you've scrolled past the initial photos that load which will load new photos and scroll the user back to the top of the page. I added an animated loading icon component to prevent blank space on the initial load of the page.
 
 This app was initially setup in VS Code using create-react-app. From there, I setup several components to keep the code from getting too hard to read within one component:
